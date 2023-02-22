@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores basicos -->
+    <color name="negro">#FF000000</color>
+    <color name="blanco">#FFFFFFFF</color>
+    <color name="gris">#C0C0C0</color>
+    <color name="rojo_pastel">#E25D53</color>
+    <color name="cafe">#FF61493F</color>
+    <color name="indigo">#8C73FF</color>
+    <color name="amarillo">#FFD862</color>
+    <color name="verde">#00796b</color>
+    <color name="morado">#673ab7</color>
+
+    <!-- Colores de componentes normales -->
+    <color name="text_buttoon_outlined">@color/gris</color>
+    <color name="contorno">#54FFFFFF</color>
+    <color name="fondo_ventana">#121212</color>
+    <color name="fondo_toolbar">#242424</color>
+    <color name="boton_reenviar_corregir">#242424</color>
+    <color name="secundario">@color/amarillo</color>
+    <color name="app_bar">#121212</color>
+
+    <!-- Boton Google y Boton Facebook -->
+    <color name="text_btn_google_fb">@color/blanco</color>
+    <color name="fondo_btn_google_fb">#242424</color>
+    <color name="ripple_btn_google_fb">#404040</color>
+
+    <!-- Colores de los textos -->
+    <color name="titulos">@color/blanco</color>
+    <color name="parrafos">@color/gris</color>
+
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vista.activitys.ActivityNoticia">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/toolbar_noticia"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_url_noticia_web"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:maxLines="1"
+                android:text="https://google.com.mx"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/btn_compartir_noticia_web"
+                app:layout_constraintStart_toEndOf="@+id/btn_cerrar_noticia"
+                app:layout_constraintTop_toBottomOf="@+id/txt_titulo_noticia_web" />
+
+            <ImageButton
+                android:id="@+id/ic_mas_opc"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_mas_opc"
+                android:background="?android:attr/selectableItemBackground"/>
+
+            <ImageButton
+                android:id="@+id/btn_compartir_noticia_web"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/ic_mas_opc"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_compartir"
+                android:background="?android:attr/selectableItemBackground"/>
+
+            <TextView
+                android:id="@+id/txt_titulo_noticia_web"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:maxLines="1"
+                android:text="Titulo de la noticia"
+                android:justificationMode="none"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/btn_compartir_noticia_web"
+                app:layout_constraintStart_toEndOf="@+id/btn_cerrar_noticia"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/btn_cerrar_noticia"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/ic_cerrar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <WebView
+        android:id="@+id/web_noticia"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_noticia" />
+</androidx.constraintlayout.widget.ConstraintLayout>
